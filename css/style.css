@@ -26,7 +26,7 @@ body {
 body {
   margin: 0%;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background: linear-gradient(180deg, #f4f19d 0%, #dd54aa 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
