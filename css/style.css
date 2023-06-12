@@ -16,7 +16,7 @@
 
 html,
 body {
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 * {
@@ -236,11 +236,11 @@ body {
   color: #ffffff;
 }
 
-.foundation-circle{
+.foundation-circle {
   width: 270px;
   height: 270px;
   position: relative;
-  margin:auto;
+  margin: auto;
   margin-top: 20%;
 }
 .foundation-circle-1 {
