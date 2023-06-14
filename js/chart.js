@@ -13,12 +13,11 @@ let color_list = [
 
 $(function () {
   $(".start-button").on("click", function () {
-    $(".topicon").fadeOut(1000);
-
-    console.log("aiueo");
-    $(".question-background").fadeIn(6000).css("display", "flex");
-    question_elem = document.getElementById("question");
-    // console.log(question_text);
+    $(".topicon").fadeOut(500, function () {
+      console.log("aiueo");
+      $(".question-background").fadeIn(500).css("display", "flex");
+      question_elem = document.getElementById("question");
+    });
   });
 });
 
@@ -34,23 +33,137 @@ function changeQ(num, ques) {
   }
   //書き換え実行
   $("p").fadeOut(500, function () {
-    $("p").html(question_text);
-    $(".foundation-back-1").addClass("color-change");
-    $("p").fadeIn(500);
-    $(".color-change").css({
-      "background-color": color_list[now_num],
-    });
+    switch (count) {
+      case 100:
+        //最後の画面処理
+        $("#last-foundation-back").removeClass("color-change");
+        $("#last-foundation-back").css({
+          "background-color": "#131313",
+        });
+        switch (question_text) {
+          case "ステージ":
+            $(".imgin-1").css(
+              "background-image",
+              "url(../images/chart-img/ステージ部署長.svg)"
+            );
+            $("#logo-img").attr("src", "./images/logo/night_logo.png");
+            $(".busyo_name").html("Stage");
+            break;
+          case "PA":
+            $(".imgin-1").css(
+              "background-image",
+              "url(../images/chart-img/PA部署長.svg)"
+            );
+            $("#logo-img").attr("src", "./images/logo/night_logo.png");
+            $(".busyo_name").html("Stage");
+            break;
+          case "Web":
+            $(".imgin-1").css(
+              "background-image",
+              "url(../images/chart-img/web部署長.svg)"
+            );
+            $("#logo-img").attr("src", "./images/logo/web_logo.png");
+            $(".busyo_name").html("Web");
+            break;
+          case "インテリア":
+            $(".imgin-1").css(
+              "background-image",
+              "url(../images/chart-img/インテリア部署長.svg)"
+            );
+            $("#logo-img").attr("src", "./images/logo/interior_logo.png");
+            $(".busyo_name").html("Interior");
+            break;
+          case "エクステリア":
+            $(".imgin-1").css(
+              "background-image",
+              "url(../images/chart-img/エクステリア部署長.svg)"
+            );
+            $("#logo-img").attr("src", "./images/logo/exterior_logo.png");
+            $(".busyo_name").html("Exterior");
+            break;
+          case "カフェ":
+            $(".imgin-1").css(
+              "background-image",
+              "url(../images/chart-img/カフェ部署長.svg)"
+            );
+            $("#logo-img").attr("src", "./images/logo/cafe_logo.png");
+            $(".busyo_name").html("Cafe");
+            break;
+          case "グラフィック":
+            $(".imgin-1").css(
+              "background-image",
+              "url(../images/chart-img/グラフィック部署長.svg)"
+            );
+            $("#logo-img").attr("src", "./images/logo/gra_logo.png");
+            $(".busyo_name").html("Graphic");
+            break;
+          case "ディレクション":
+            $(".imgin-1").css(
+              "background-image",
+              "url(../images/chart-img/ディレクション部署長.svg)"
+            );
+            $("#logo-img").attr("src", "./images/logo/dire_logo.png");
+            $(".busyo_name").html("Direction");
+            break;
+          case "バー":
+            $(".imgin-1").css(
+              "background-image",
+              "url(../images/chart-img/バー部署長.svg)"
+            );
+            $("#logo-img").attr("src", "./images/logo/bar_logo.png");
+            $(".busyo_name").html("Bar");
+            break;
+          case "ブース":
+            $(".imgin-1").css(
+              "background-image",
+              "url(../images/chart-img/ブース部署長.svg)"
+            );
+            $("#logo-img").attr("src", "./images/logo/booth_logo.png");
+            $(".busyo_name").html("Booth");
+            break;
+          case "ワークショップ":
+            $(".imgin-1").css(
+              "background-image",
+              "url(../images/chart-img/ワークショップ部署長.svg)"
+            );
+            $("#logo-img").attr("src", "./images/logo/work_logo.png");
+            $(".busyo_name").html("Workshop");
+            break;
+          case "映像":
+            $(".imgin-1").css(
+              "background-image",
+              "url(../images/chart-img/映像部署長.svg)"
+            );
+            $("#logo-img").attr("src", "./images/logo/movie_logo.png");
+            $(".busyo_name").html("Movie");
+            break;
+          case "体育祭":
+            $(".imgin-1").css(
+              "background-image",
+              "url(../images/chart-img/体育祭部署長.svg)"
+            );
+            $("#logo-img").attr("src", "./images/logo/ath_logo.png");
+            $(".busyo_name").html("Athleticfestival");
+            break;
+        }
+        $(".question-background").fadeOut(100);
+        $(".last-background").fadeIn(500).css("display", "flex");
+        console.log("ラスト着火");
+        break;
+      default:
+        $("p").html(question_text);
+        $(".foundation-back-1").addClass("color-change");
+        $("p").fadeIn(500);
+        $(".color-change").css({
+          "background-color": color_list[now_num],
+        });
+        break;
+    }
+
     // console.log($(".color-change").css("background-color"));
   });
   // $(".foundation-back-1").removeClass("color-change");
   console.log(question_text);
-  switch (count) {
-    case 100:
-      //最後の画面処理
-      break;
-    default:
-      break;
-  }
 }
 
 //はいボタンを押したとき
@@ -83,7 +196,7 @@ $(document).on("click", ".yesbutton", function () {
         changeQ(8, "ゲームが好き");
         break;
       case 8:
-        changeQ(100, "WEb");
+        changeQ(100, "Web");
         break;
       case 9:
         changeQ(11, "予定は進んで" + "<br>" + "たてる方");
@@ -164,4 +277,8 @@ $(document).on("click", ".nobutton", function () {
         break;
     }
   }, 200);
+});
+
+$(document).on("click", "#retry-button", function () {
+  location.reload();
 });

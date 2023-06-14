@@ -138,7 +138,7 @@ body {
   position: absolute;
   width: 340px;
   height: 90vh;
-  background-color: #131313;
+  background-color: #999999;
   filter: blur(2px);
   border-radius: 15px;
   z-index: 1;
@@ -295,6 +295,7 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 7;
+  margin-bottom: 10%;
   /* border: #8300c1; */
 }
 
@@ -405,7 +406,7 @@ body {
 }
 .last-background {
   height: 100vh;
-  display: flex;
+  display: none;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -420,21 +421,24 @@ body {
 .imgin-1 {
   position: relative;
   height: 72%;
-  width: 100%;
-  background-image: url(../images/full_length/エクステリア部署長ロゴ.svg);
-  /* background-size: cover; */
+  width: 95%;
+  background-image: url(../images/chart-img/エクステリア部署長ロゴ.svg);
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 5;
-  /* filter: brightness(120%) saturate(150%) ; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 .imgin-2 {
-  position: absolute;
+  position: relative;
   width: 100%;
-  background-image: url(../images/logo/exterior_logo.png);
+  /* background-image: url(../images/logo/exterior_logo.png); */
   background-size: contain;
   background-repeat: no-repeat;
-  bottom: 0%;
+  /* bottom: 10%; */
   /* mix-blend-mode: screen; */
   z-index: 6;
   /* filter: brightness(120%) saturate(150%); */
@@ -442,7 +446,7 @@ body {
 .last-background {
   height: 100vh;
   position: relative;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   margin: auto;
@@ -465,7 +469,7 @@ body {
 .last-button {
   position: relative;
   z-index: 7;
-  width: 100%;
+  width: 260px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -473,8 +477,8 @@ body {
 
 .retry-button {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background-color: #c882ff;
 }
 
@@ -483,8 +487,8 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   /* background-color: #c4da57; */
 }
 .twitter-img {
@@ -499,4 +503,29 @@ body {
   font-size: var(--text_size_small);
   color: #00b2ff;
   text-shadow: 0px 0.636925px 6.36925px #0066ff;
+}
+.retry-text {
+  position: absolute;
+  z-index: 2;
+  font-family: "Bungee Inline";
+  font-size: var(--text_size_small);
+  color: #26FF02;
+  text-shadow: 0px 0.636925px 6.36925px #26FF02;
+}
+
+.busyo-and-button{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
+  width: 100%;
+}
+
+.img-name-button{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
