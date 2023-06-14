@@ -422,7 +422,7 @@ body {
   position: relative;
   height: 72%;
   width: 95%;
-  background-image: url(../images/chart-img/エクステリア部署長ロゴ.svg);
+  background-image: url(../images/chart-img/エクステリア部署長ロゴ.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -464,6 +464,7 @@ body {
   font-family: "Bungee Inline";
   font-size: var(--text_size_ex_large);
   color: #ffffff;
+  text-shadow: 0px 0px 2px #ffffff;
 }
 
 .last-button {
@@ -494,7 +495,7 @@ body {
 .twitter-img {
   position: absolute;
   z-index: 1;
-  width: 70%;
+  width: 50%;
 }
 .twitter-text {
   position: absolute;
@@ -509,11 +510,11 @@ body {
   z-index: 2;
   font-family: "Bungee Inline";
   font-size: var(--text_size_small);
-  color: #26FF02;
-  text-shadow: 0px 0.636925px 6.36925px #26FF02;
+  color: #26ff02;
+  text-shadow: 0px 0.636925px 6.36925px #26ff02;
 }
 
-.busyo-and-button{
+.busyo-and-button {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -521,11 +522,10 @@ body {
   width: 100%;
 }
 
-.img-name-button{
+.img-name-button {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }

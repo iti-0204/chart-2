@@ -44,7 +44,7 @@ function changeQ(num, ques) {
           case "ステージ":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/ステージ部署長.svg)"
+              "url(../images/chart-img/ステージ部署長.png)"
             );
             $("#logo-img").attr("src", "./images/logo/night_logo.png");
             $(".busyo_name").html("Stage");
@@ -52,7 +52,7 @@ function changeQ(num, ques) {
           case "PA":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/PA部署長.svg)"
+              "url(../images/chart-img/PA部署長.png)"
             );
             $("#logo-img").attr("src", "./images/logo/night_logo.png");
             $(".busyo_name").html("Stage");
@@ -60,7 +60,7 @@ function changeQ(num, ques) {
           case "Web":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/web部署長.svg)"
+              "url(../images/chart-img/web部署長.png)"
             );
             $("#logo-img").attr("src", "./images/logo/web_logo.png");
             $(".busyo_name").html("Web");
@@ -68,7 +68,7 @@ function changeQ(num, ques) {
           case "インテリア":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/インテリア部署長.svg)"
+              "url(../images/chart-img/インテリア部署長.png)"
             );
             $("#logo-img").attr("src", "./images/logo/interior_logo.png");
             $(".busyo_name").html("Interior");
@@ -76,7 +76,7 @@ function changeQ(num, ques) {
           case "エクステリア":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/エクステリア部署長.svg)"
+              "url(../images/chart-img/エクステリア部署長.png)"
             );
             $("#logo-img").attr("src", "./images/logo/exterior_logo.png");
             $(".busyo_name").html("Exterior");
@@ -84,7 +84,7 @@ function changeQ(num, ques) {
           case "カフェ":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/カフェ部署長.svg)"
+              "url(../images/chart-img/カフェ部署長.png)"
             );
             $("#logo-img").attr("src", "./images/logo/cafe_logo.png");
             $(".busyo_name").html("Cafe");
@@ -92,7 +92,7 @@ function changeQ(num, ques) {
           case "グラフィック":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/グラフィック部署長.svg)"
+              "url(../images/chart-img/グラフィック部署長.png)"
             );
             $("#logo-img").attr("src", "./images/logo/gra_logo.png");
             $(".busyo_name").html("Graphic");
@@ -100,7 +100,7 @@ function changeQ(num, ques) {
           case "ディレクション":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/ディレクション部署長.svg)"
+              "url(../images/chart-img/ディレクション部署長.png)"
             );
             $("#logo-img").attr("src", "./images/logo/dire_logo.png");
             $(".busyo_name").html("Direction");
@@ -108,7 +108,7 @@ function changeQ(num, ques) {
           case "バー":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/バー部署長.svg)"
+              "url(../images/chart-img/バー部署長.png)"
             );
             $("#logo-img").attr("src", "./images/logo/bar_logo.png");
             $(".busyo_name").html("Bar");
@@ -116,7 +116,7 @@ function changeQ(num, ques) {
           case "ブース":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/ブース部署長.svg)"
+              "url(../images/chart-img/ブース部署長.png)"
             );
             $("#logo-img").attr("src", "./images/logo/booth_logo.png");
             $(".busyo_name").html("Booth");
@@ -124,7 +124,7 @@ function changeQ(num, ques) {
           case "ワークショップ":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/ワークショップ部署長.svg)"
+              "url(../images/chart-img/ワークショップ部署長.png)"
             );
             $("#logo-img").attr("src", "./images/logo/work_logo.png");
             $(".busyo_name").html("Workshop");
@@ -132,7 +132,7 @@ function changeQ(num, ques) {
           case "映像":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/映像部署長.svg)"
+              "url(../images/chart-img/映像部署長.png)"
             );
             $("#logo-img").attr("src", "./images/logo/movie_logo.png");
             $(".busyo_name").html("Movie");
@@ -140,7 +140,7 @@ function changeQ(num, ques) {
           case "体育祭":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/体育祭部署長.svg)"
+              "url(../images/chart-img/体育祭部署長.png)"
             );
             $("#logo-img").attr("src", "./images/logo/ath_logo.png");
             $(".busyo_name").html("Athleticfestival");
