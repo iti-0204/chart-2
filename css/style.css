@@ -435,7 +435,7 @@ body {
 .imgin-2 {
   position: relative;
   width: 100%;
-  /* background-image: url(../images/chart-img/stage_leader.png); */
+  /*  */
   background-size: contain;
   background-repeat: no-repeat;
   /* bottom: 10%; */
@@ -488,20 +488,20 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   /* background-color: #c4da57; */
 }
 .twitter-img {
   position: absolute;
   z-index: 1;
-  width: 50%;
+  width: 60%;
 }
 .twitter-text {
   position: absolute;
   z-index: 2;
   font-family: "Bungee Inline";
-  font-size: var(--text_size_small);
+  font-size: var(--text_size_medium);
   color: #00b2ff;
   text-shadow: 0px 0.636925px 6.36925px #0066ff;
 }
@@ -509,9 +509,14 @@ body {
   position: absolute;
   z-index: 2;
   font-family: "Bungee Inline";
-  font-size: var(--text_size_small);
+  font-size: var(--text_size_medium);
   color: #26ff02;
   text-shadow: 0px 0.636925px 6.36925px #26ff02;
+}
+.retry-img {
+  position: absolute;
+  z-index: 1;
+  width: 80%;
 }
 
 .busyo-and-button {
