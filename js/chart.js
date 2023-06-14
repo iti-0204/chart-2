@@ -52,7 +52,7 @@ function changeQ(num, ques) {
           case "PA":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/PA_leader.png)"
+              "url(./images/chart-img/PA_leader.png)"
             );
             $("#logo-img").attr("src", "./images/logo/night_logo.png");
             $(".busyo_name").html("Stage");
@@ -60,7 +60,7 @@ function changeQ(num, ques) {
           case "Web":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/web_leader.png)"
+              "url(./images/chart-img/web_leader.png)"
             );
             $("#logo-img").attr("src", "./images/logo/web_logo.png");
             $(".busyo_name").html("Web");
@@ -68,7 +68,7 @@ function changeQ(num, ques) {
           case "インテリア":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/interior_leader.png)"
+              "url(./images/chart-img/interior_leader.png)"
             );
             $("#logo-img").attr("src", "./images/logo/interior_logo.png");
             $(".busyo_name").html("Interior");
@@ -76,7 +76,7 @@ function changeQ(num, ques) {
           case "エクステリア":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/exterior_leader.png)"
+              "url(./images/chart-img/exterior_leader.png)"
             );
             $("#logo-img").attr("src", "./images/logo/exterior_logo.png");
             $(".busyo_name").html("Exterior");
@@ -84,7 +84,7 @@ function changeQ(num, ques) {
           case "カフェ":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/cafe_leader.png)"
+              "url(./images/chart-img/cafe_leader.png)"
             );
             $("#logo-img").attr("src", "./images/logo/cafe_logo.png");
             $(".busyo_name").html("Cafe");
@@ -92,7 +92,7 @@ function changeQ(num, ques) {
           case "グラフィック":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/graphic_leader.png)"
+              "url(./images/chart-img/graphic_leader.png)"
             );
             $("#logo-img").attr("src", "./images/logo/gra_logo.png");
             $(".busyo_name").html("Graphic");
@@ -100,7 +100,7 @@ function changeQ(num, ques) {
           case "ディレクション":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/direction_leader.png)"
+              "url(./images/chart-img/direction_leader.png)"
             );
             $("#logo-img").attr("src", "./images/logo/dire_logo.png");
             $(".busyo_name").html("Direction");
@@ -108,7 +108,7 @@ function changeQ(num, ques) {
           case "バー":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/bar_leader.png)"
+              "url(./images/chart-img/bar_leader.png)"
             );
             $("#logo-img").attr("src", "./images/logo/bar_logo.png");
             $(".busyo_name").html("Bar");
@@ -116,7 +116,7 @@ function changeQ(num, ques) {
           case "ブース":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/booth_leader.png)"
+              "url(./images/chart-img/booth_leader.png)"
             );
             $("#logo-img").attr("src", "./images/logo/booth_logo.png");
             $(".busyo_name").html("Booth");
@@ -124,7 +124,7 @@ function changeQ(num, ques) {
           case "ワークショップ":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/workshop_leader.png)"
+              "url(./images/chart-img/workshop_leader.png)"
             );
             $("#logo-img").attr("src", "./images/logo/work_logo.png");
             $(".busyo_name").html("Workshop");
@@ -132,7 +132,7 @@ function changeQ(num, ques) {
           case "映像":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/movie_leader.png)"
+              "url(./images/chart-img/movie_leader.png)"
             );
             $("#logo-img").attr("src", "./images/logo/movie_logo.png");
             $(".busyo_name").html("Movie");
@@ -140,7 +140,7 @@ function changeQ(num, ques) {
           case "体育祭":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/athlethic_leader.png)"
+              "url(./images/chart-img/athlethic_leader.png)"
             );
             $("#logo-img").attr("src", "./images/logo/ath_logo.png");
             $(".busyo_name").html("Athleticfestival");
