@@ -44,7 +44,7 @@ function changeQ(num, ques) {
           case "ステージ":
             $(".imgin-1").css(
               "background-image",
-              "url(../images/chart-img/stage_leader.png)"
+              "url(./images/chart-img/stage_leader.png)"
             );
             $("#logo-img").attr("src", "./images/logo/night_logo.png");
             $(".busyo_name").html("Stage");
