@@ -286,7 +286,7 @@ $(document).on("click", "#retry-button", function () {
 });
 
 $(document).on("click", "#share", function () {
-  busyoshare = `http://twitter.com/share?url=https://geikousai-ncu.com/&text=今年の部署は,${question_text}で決まり！！&hashtags=芸工祭2023,NEON`;
+  busyoshare = `http://twitter.com/share?url=https://geikousai-ncu.com/&text=今年の部署は...\n${question_text}で決まり！！\n&hashtags=芸工祭2023,NEON`;
   console.log(busyoshare);
-  $("#link_text a").attr("href", busyoshare);
+  $("#share").attr("href", busyoshare);
 });
