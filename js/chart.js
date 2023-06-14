@@ -1,6 +1,8 @@
 let question_elem = "";
+let question_text = "";
 let count = 0;
 let now_num = -1;
+let busyoshare = "";
 let color_list = [
   "#777777",
   "#575757",
@@ -280,5 +282,11 @@ $(document).on("click", ".nobutton", function () {
 });
 
 $(document).on("click", "#retry-button", function () {
-  location.reload();
+  // location.reload();
+});
+
+$(document).on("click", "#share", function () {
+  busyoshare = `http://twitter.com/share?url=https://geikousai-ncu.com/&text=今年の部署は,${question_text}で決まり！！&hashtags=芸工祭2023,NEON`;
+  console.log(busyoshare);
+  $("#link_text a").attr("href", busyoshare);
 });
