@@ -505,6 +505,9 @@ body {
   color: #00b2ff;
   text-shadow: 0px 0.636925px 6.36925px #0066ff;
 }
+.twitter-link {
+  text-decoration: none;
+}
 .retry-text {
   position: absolute;
   z-index: 2;
