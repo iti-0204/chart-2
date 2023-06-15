@@ -48,7 +48,7 @@ function changeQ(num, ques) {
               "background-image",
               "url(./images/chart-img/stage_leader.png)"
             );
-            $("#logo-img").attr("src", "./images/logo/night_logo.png");
+            $("#logo-img").attr("src", "./images/logo/day_logo.png");
             $(".busyo_name").html("Stage");
             break;
           case "PA":
@@ -56,7 +56,7 @@ function changeQ(num, ques) {
               "background-image",
               "url(./images/chart-img/PA_leader.png)"
             );
-            $("#logo-img").attr("src", "./images/logo/night_logo.png");
+            $("#logo-img").attr("src", "./images/logo/pa_logo.png");
             $(".busyo_name").html("Stage");
             break;
           case "Web":
@@ -145,7 +145,7 @@ function changeQ(num, ques) {
               "url(./images/chart-img/athlethic_leader.png)"
             );
             $("#logo-img").attr("src", "./images/logo/ath_logo.png");
-            $(".busyo_name").html("Athleticfestival");
+            $(".busyo_name").html("Athletic\nfestival");
             break;
         }
         $(".question-background").fadeOut(100);
@@ -282,7 +282,7 @@ $(document).on("click", ".nobutton", function () {
 });
 
 $(document).on("click", "#retry-button", function () {
-  // location.reload();
+  location.reload();
 });
 
 $(document).on("click", "#share", function () {
