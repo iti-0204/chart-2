@@ -437,14 +437,14 @@ body {
 }
 .imgin-2 {
   position: relative;
-  width:90%;
+  width: 90%;
   /*  */
   background-size: contain;
   background-repeat: no-repeat;
   /* bottom: 10%; */
   /* mix-blend-mode: screen; */
   z-index: 6;
-  filter:brightness(100%)
+  filter: brightness(100%);
   /* filter: brightness(120%) saturate(150%); */
 }
 .last-background {
