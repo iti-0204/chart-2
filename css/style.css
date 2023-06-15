@@ -434,6 +434,7 @@ body {
   align-items: center;
   justify-content: flex-end;
   gap: 5%;
+  margin-top: 10%;
 }
 .imgin-2 {
   position: relative;
