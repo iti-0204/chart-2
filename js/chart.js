@@ -1,3 +1,13 @@
+$(function () {
+  $(window).on("load", function () {
+    $(".loader").delay(500).fadeOut(500);
+    $(".loader-bg").delay(800).fadeOut(700);
+  });
+  setTimeout(function () {
+    $(".loader-bg").fadeOut(500);
+  }, 5000);
+});
+
 let question_elem = "";
 let question_text = "";
 let count = 0;
@@ -300,6 +310,10 @@ $(document).on("click", "#share", function () {
 });
 
 window.addEventListener("resize", function () {
+  let display_stat_ques = $(".question-background").css("display");
+  let display_stat_last = $(".last-background").css("display");
+  // console.log(display_stat_last);
+
   if (window.outerWidth > 600) {
     $(".question-background").css({
       display: "none",
@@ -307,5 +321,17 @@ window.addEventListener("resize", function () {
     $(".last-background").css({
       display: "none",
     });
+  } else if (display_stat_ques == "none" || display_stat_ques == "none") {
+    $(".question-background").css({
+      display: "flex",
+    });
+    $(".last-background").css({
+      display: "flex",
+    });
+    if (count == 100) {
+      $(".question-background").css({
+        display: "none",
+      });
+    }
   }
 });
