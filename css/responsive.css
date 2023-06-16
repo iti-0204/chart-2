@@ -1,0 +1,64 @@
+:root {
+  /* 最後の部署名 */
+  --text_size_ex_large: 48px;
+  /* 質問文 */
+  --text_size_large: 30px;
+  /* yes,no,chart,start */
+  --text_size_medium: 26px;
+  /* 最後の部署説明 */
+  --text_size_small: 16px;
+}
+
+body {
+  background: linear-gradient(278.45deg, #f7ee4f -45.82%, #b32e81 110.77%);
+  /* background-color: black; */
+  /* display: none; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  height: 100vh;
+}
+
+body::after {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 200px;
+  height: 200px; */
+  content: url(../images/chart-img/main-logo-back.png);
+  /* background-image: url(../images/chart-img/main-logo-back.png);
+  background-repeat: no-repeat;
+  background-size: contain; */
+  opacity: 0.3;
+  z-index: 1;
+}
+
+body::before {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  content: "スマートフォンでご覧ください😪";
+  font-size: var(--text_size_ex_large);
+  color: #ffffff;
+  text-align: center;
+  z-index: 2;
+  opacity: 1;
+}
+
+.topicon-2 {
+  display: none;
+}
+
+.question-background{
+  display: none;
+}
+
+.last-background{
+  display: none;
+}

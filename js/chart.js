@@ -14,13 +14,20 @@ let color_list = [
 // console.log(question_text);
 
 $(function () {
-  $(".start-button").on("click", function () {
-    $(".topicon").fadeOut(500, function () {
-      console.log("aiueo");
-      $(".question-background").fadeIn(500).css("display", "flex");
-      question_elem = document.getElementById("question");
+  if (window.outerWidth < 600) {
+    $(".start-button").on("click", function () {
+      $(".topicon").fadeOut(500, function () {
+        console.log("aiueo");
+        $(".question-background").fadeIn(500).css("display", "flex");
+        question_elem = document.getElementById("question");
+      });
     });
-  });
+  }
+  // if (window.outerWidth < 600) {
+  //   $(".question-background").css({
+  //     "display": "none",
+  //   });
+  // }
 });
 
 //質問文の変更
@@ -57,7 +64,7 @@ function changeQ(num, ques) {
               "url(./images/chart-img/PA_leader.png)"
             );
             $("#logo-img").attr("src", "./images/logo/pa_logo.png");
-            $(".busyo_name").html("Stage");
+            $(".busyo_name").html("PA");
             break;
           case "Web":
             $(".imgin-1").css(
@@ -128,7 +135,7 @@ function changeQ(num, ques) {
               "background-image",
               "url(./images/chart-img/workshop_leader.png)"
             );
-            $("#logo-img").attr("src", "./images/logo/work_logo.png");
+            $("#logo-img").attr("src", "./images/logo/wark_logo.png");
             $(".busyo_name").html("Workshop");
             break;
           case "映像":
@@ -140,10 +147,11 @@ function changeQ(num, ques) {
             $(".busyo_name").html("Movie");
             break;
           case "体育祭":
-            $(".imgin-1").css(
-              "background-image",
-              "url(./images/chart-img/athlethic_leader.png)"
-            );
+            $(".imgin-1").css({
+              "background-image":
+                "url(./images/chart-img/athlethic_leader.png)",
+              "margin-top": "20%",
+            });
             $("#logo-img").attr("src", "./images/logo/ath_logo.png");
             $(".busyo_name").html("Athletic\nfestival");
             break;
@@ -289,4 +297,15 @@ $(document).on("click", "#share", function () {
   busyoshare = `http://twitter.com/share?url=https://geikousai-ncu.com/&text=今年の部署は...%0a%0a${question_text}で決まり！！%0a%23芸工祭%20%23NEON%0a`;
   console.log(busyoshare);
   $("#share").attr("href", busyoshare);
+});
+
+window.addEventListener("resize", function () {
+  if (window.outerWidth > 600) {
+    $(".question-background").css({
+      display: "none",
+    });
+    $(".last-background").css({
+      display: "none",
+    });
+  }
 });
