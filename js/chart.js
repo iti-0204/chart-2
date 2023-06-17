@@ -11,6 +11,7 @@ $(function () {
 let question_elem = "";
 let question_text = "";
 let count = 0;
+let start_state = false;
 let now_num = -1;
 let busyoshare = "";
 let color_list = [
@@ -30,6 +31,7 @@ $(function () {
         console.log("aiueo");
         $(".question-background").fadeIn(500).css("display", "flex");
         question_elem = document.getElementById("question");
+        start_state = true;
       });
     });
   }
@@ -321,17 +323,23 @@ window.addEventListener("resize", function () {
     $(".last-background").css({
       display: "none",
     });
-  } else if (display_stat_ques == "none" || display_stat_ques == "none") {
-    $(".question-background").css({
-      display: "flex",
-    });
-    $(".last-background").css({
-      display: "flex",
-    });
-    if (count == 100) {
-      $(".question-background").css({
-        display: "none",
-      });
+  } else if (display_stat_ques == "none" || display_last_ques == "none") {
+    if (start_state == true) {
+      if (count != 100) {
+        $(".question-background").css({
+          display: "flex",
+        });
+      } else if (count == 100) {
+        $(".last-background").css({
+          display: "flex",
+        });
+      }
     }
+
+    // if (count == 100) {
+    //   $(".question-background").css({
+    //     display: "none",
+    //   });
+    // }
   }
 });
